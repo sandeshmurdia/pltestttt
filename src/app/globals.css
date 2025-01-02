@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dsoBand-default: pink; /* Default color */
+  --dsoBand-disabled: gray;
+  --dsoBand-enhanced: blue;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --dsoBand-default: hotpink; /* Dark mode override */
+    --dsoBand-disabled: darkgray;
+    --dsoBand-enhanced: darkblue;
+  }
+}
