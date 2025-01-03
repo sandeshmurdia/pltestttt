@@ -25,7 +25,8 @@ export default function Home() {
     return () => clearTimeout(timeout); // Cleanup on unmount
   }, []); // Run once after component mounts
 
-
+  const x  = (2 + 2 === 3);
+  
   return (
     <div
       // style={{
@@ -37,14 +38,14 @@ export default function Home() {
     >
       <div>
         <Badge
-        position="absolute"
+          pos="absolute"
           bottom="2px"
           left={`${positionLeft}px`}
           right={`${positionRight}px`}
           width={`${PRICING_CELL_WIDTH - positionLeft + positionRight}px`}
           borderRightRadius={borderRightRadius}
           borderLeftRadius={borderLeftRadius}
-          bg={bgColor} // Dynamically set background color
+          bg={'dsoBand.default'} // Dynamically set background color
           color={'green'}
         >
           Click me
